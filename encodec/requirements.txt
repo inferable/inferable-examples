@@ -1,0 +1,6 @@
+encodec
+fastapi
+torchaudio
+pydantic
+uvicorn
+python-multipart
