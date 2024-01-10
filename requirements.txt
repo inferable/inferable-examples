@@ -1,0 +1,7 @@
+click
+setuptools
+diffusers
+torch
+transformers
+accelerate
+tomesd
