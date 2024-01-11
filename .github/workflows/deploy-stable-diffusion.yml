@@ -10,7 +10,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: inferable-examples/stable-diffusion
+  IMAGE_NAME: inferable/stable-diffusion
 
 jobs:
   build-and-push-image:
