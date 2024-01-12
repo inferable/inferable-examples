@@ -31,13 +31,6 @@ RUN distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\.//g') && 
 RUN apt-get update 
 RUN apt-get -y install cuda-drivers
 
-# RUN distribution1=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\.//g')
-# RUN echo $distribution1
-# RUN wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution1/x86_64/cuda-keyring_1.0-1_all.deb
-# RUN dpkg -i cuda-keyring_1.0-1_all.deb
-# RUN apt-get update
-# RUN apt-get -y install cuda-drivers
-
 WORKDIR /diffusion
 
 COPY --from=model /tmp/model /diffusion/model
