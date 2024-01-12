@@ -10,7 +10,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: inferable/inferable-examples/encodec
+  IMAGE_NAME: inferable/encodec
 
 jobs:
   build-and-push-image:
