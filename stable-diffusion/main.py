@@ -18,8 +18,6 @@ def hello(sentence):
     diffusers.logging.set_verbosity(50)
     diffusers.logging.disable_progress_bar()
 
-    click.echo(f"Your sentence is {sentence}")
-
     pipeline = DiffusionPipeline.from_pretrained("./model")
 
     # if one wants to set `leave=False`
@@ -39,8 +37,7 @@ def hello(sentence):
 
     with open("result.png", "rb") as file:
         file_content = file.read()
-        b64 = base64.b64encode(file_content).decode("utf-8")
-        click.echo(b64)
+        click.echo(file_content)
 
 
 if __name__ == "__main__":
