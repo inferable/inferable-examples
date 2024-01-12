@@ -16,6 +16,7 @@ docker run -p 8081:80 -d encodec
 
 ```bash
 curl -v -F "file=@sample.wav" http://localhost:8000 -O -J
+curl -v -L -F "file=@BabyElephantWalk60.wav" https://docker.inferable.cloud/ghcr.io/inferable/encodec:main -O -J
 ```
 Note that the result is a `.ecdc` file.
 
