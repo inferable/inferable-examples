@@ -7,6 +7,8 @@ RUN rm -rf /tmp/model/.git
 
 FROM ubuntu:latest
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get -y update && \
     apt-get -y install curl bash tar wget gpg sed
 
