@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "/stable-diffusion"
+      - "stable-diffusion/**"
   workflow_dispatch:
 
 env:
