@@ -1,4 +1,4 @@
-name: Publish Stable Diffusion Docker image
+name: Publish Gradio Stable Diffusion Docker image
 
 on:
   push:
